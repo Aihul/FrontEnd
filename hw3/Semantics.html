@@ -4,71 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
     <title>Semantic</title>
 </head>
 <body>
-    <header>
-        <h1 align="center">First website</h1>
-        <nav>
-            <h3>Menu:</h3>
-            <ul>
-                <li><a href="#table">Human Brain</a></li>
-                <li><a href="#image1">Are you Right-Brained or Left-Brained?</a></li>
-                <li><a href="#form">Feedback Form</a></li>
-            </ul>
-           
-        </nav>
-    </header>
+    <header></header>
     <main>
-        <section id="table">
-            <h2 align="center">Human Brain</h2>
-            <img src="img/human brain.jpg" alt="Brain" title="Brain">
-            <table border="2" width="350" cellpadding="10">
-                <caption><strong>Brain</strong></caption>
-                <tr align="center"><th>Left</th><th>Right</th></tr>
-                <tr align="center"><td>Analysis</td><td>Creativity</td></tr>
-                <tr align="center"><td>Logic</td><td>Intuition</td></tr>
-                <tr align="center"><td>Facts</td><td>Arts</td></tr>
-                <tr align="center"><td>Realistic</td><td>Emotion</td></tr>
-            </table>
+    <div id="container">
+        <section id="1">
+            <h1>HTML5 Семантичні елементи</h1>
+            <p>Семантичний елемент чітко описує його значення як для браузера, так і
+                для розробника.</p>
+            <p>Приклади не <strong>семантичних</strong> елементів: &lt;div&gt і &lt;span&gt- нічого не говорить
+                    про його вміст</p>
+            <p>Приклади <strong>семантичних</strong> елементів: &lt;form&gt, &lt;table&gt і &lt;article&gt - чітко визначає його зміст.</p>
         </section>
-        <section>
-            <h2 align="center">Are you Right-Brained or Left-Brained?</h2>
-            <img src="img/brain2.jpg" alt="left or right?" title="left or right?" width="500" height="600" id="image1">
+
+        <section id="2">
+            <h2>Підтримка браузерів</h2>
+            <img src="img/Chrome.png" alt="chrome" class="icons">
+            <img src="img/ie.png" alt="explorer" class="icons">
+            <img src="img/firefox.jpg" alt="firefox" class="icons">
+            <img src="img/safari.jpg" alt="safari" class="icons">
+            <img src="img/opera.png" alt="opera" class="icons">
+            <p>Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.</p>
+            <p>Крім того, ви можете "навчити" старих браузерів, як обробляти "невідомі
+                елементи".</p>
+            <p>Прочитайте про це в <a href="">підтримці браузера HTML5 </a>.</p>
         </section>
-        <section>
-            <h2 align="center">Fill in the forms please:</h2>
-            <form id="form" action="#" method="get">
-                <div>
-                    <p>Username</p>
-                    <input placeholder="Name" tabindex="1" name="username" type="text" />
-                </div>
-                <div>
-                    <p>E-mail</p>
-                    <input tabindex="2" name="useremail" type="text" />
-                </div>
-                <div>
-                    <p>Gender</p>
-                    <input tabindex="3" checked type="radio" name="gender" value="male" /> Male
-                </div>
-                <div>
-                    <input tabindex="3" type="radio" name="gender" value="female" /> Female
-                </div>
-                <div>
-                    <p>Write your answer</p>
-                    <textarea tabindex="4" name="text"></textarea>
-                </div>
-                <div>
-                    <p>Actions</p>
-                    <button tabindex="5" type="submit">Send</button>
-                    <button tabindex="6" type="reset">Clear</button>
-                </div>
-               
-            </form>
+
+        <section id="3">
+            <h2>Нові семантичні елементи в HTML5</h2>
+            <p>HTML5 пропонує нові семантичні елементи для визначення різних частин
+                веб-сторінки:</p>
+            <ul>
+                <li>&lt;section&gt</li>
+                <li>&lt;article&gt</li>
+                <li>&lt;header&gt</li>
+                <li>&lt;footer&gt</li>
+            </ul>
         </section>
+
+        <section id="4">
+            <h2>HTML5 &lt;section&gt елемент</h2>
+            <p>Елемент &lt;section&gt визначає розділ в документі.</p>
+            <p>Згідно з документацією в3к'с HTML5: "розділ представляє собою
+                тематичну угруповання контенту, зазвичай з заголовком".</p>
+            <p>Домашня сторінка зазвичай може бути розділена на розділи для
+                ознайомлення, змісту і контактної інформації.</p>
+            <img src="img/scrh1.png" alt="section" class="example1">
+        </section>
+
+        <section id="5">
+            <h2>HTML5 &lt;article&gt елемент</h2>
+            <p>Елемент &ltarticle&gt визначає незалежний, автономний вміст.</p>
+            <p>Стаття повинна мати сенс самостійно, і вона повинна мати можливість
+                читати його незалежно від іншої частини веб-сайту.</p>
+            <p>Приклади того, де можна використовувати елемент &ltarticle&gt:</p>   
+            <ul>
+                <li>Повідомлення на форумі</li>
+                <li>Блозі</li>
+                <li>Газетна стаття</li>
+            </ul>
+            <img src="img/scrh2.png" alt="" class="example2">
+        </section>
+
+        <section id="6">
+            <h2>HTML5 &ltheader&gt елемент</h2>
+            <p>Елемент &ltheader&gt задає заголовок для документа або розділу</p>
+            <p>Елемент &ltheader&gt повинен використовуватися в якості контейнера для вступного змісту</p>
+            <p>В одному документі може бути кілька елементів &ltheader&gt.</p>
+            <p>У наступному прикладі визначається заголовок для статті:</p>
+            <img src="img/scrh3.png" alt="" class="example3">
+        </section>
+
+        <section id="7">
+            <h2>HTML5 &ltfooter&gt елемент</h2>
+            <p>Елемент &ltfooter&gt вказує нижній колонтитул для документа або розділу.</p>
+            <p>Нижній колонтитул зазвичай містить автора документа, інформацію про
+            авторське право, посилання на умови використання, контактні дані і т.д.</p>
+            <p>В одному документі може бути кілька елементів &ltfooter&gt.</p>
+            <img src="img/scrh4.png" alt="" class="example4">
+        </section>
+    </div>
     </main>
     <footer>
-        <h2>Thank you!Goodbye!</h2>
     </footer>
 </body>
 </html>
